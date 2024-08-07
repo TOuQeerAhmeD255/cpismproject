@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel='stylesheet'
+    href='http://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400italic,500,600,700,700italic,800,900'>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class=" m-0" href="index.html"><img id="logo"  src="images/clininc4-logo@2x.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="ul" class="gap-4 text-center pt-2 fs-6 mx-lg-5 navbar-nav mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active mb-3" aria-current="page" href="index.html">Home</a>
+            </li> 
+            <div class="dropdown">
+              <button class="fs-6 btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Poses
+              </button>
+              <ul id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="poses_by_types.html" class="mainli"><button class="dropdown-item" type="button">Poses by Types</button></a></li>
+                <li><a href="poses_by_benefit.html" class="mainli"><button class="dropdown-item" type="button">Poses by Benefit</button></a></li>
+                <li><a href="poses-general.html" class="mainli"><button class="dropdown-item" type="button">Poses General</button></a></li>
+                <li><a href="poses_by_anatomy.html" class="mainli"><button class="dropdown-item" type="button">Poses by Anatomy</button></a></li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="meditation.html">Meditation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="courses.html">Courses</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="books.html">Books</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="naturaldiet.html">Natural Diet</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="otherSlider">
+    <div class="row g-0 justify-content-center align-items-center">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-white">Poses by Anatomy</h1>
+      </div>
+      <div class="col-sm-6 image" style="background-image: url(images/poses_.jpg);">
+      </div>
+    </div>
+  </div>
+  <div id="content"class="mt-3 content">
+    <div class="container">
+      <div class="row p_issue1 mt-lg-1 mt-md-1">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <p class="text-center mt-3">On this page you will find poses organised by anatomy. These poses stretch, strengthen and mobilise different parts of the body. Search by Feet + Ankles, Calves + Hamstrings, Quads, Hip Flexors, Groin, Glutes, IT Band + TFL, Core, Posterior Chain, Lower Back, Obliques, T-Spine, Chest, Neck + Shoulders and Hands + Wrists.</p>
+        </div>
+      </div>
+
+     <hr width="100%" size="4" color="lightgreen" noshade>
+        <div class="d-flex justify-content-center gap-5 flex-wrap my-4">
+          <button type="button" class="btn btn-success filter"  id="feet" >FEET + ANKLE</button>
+          <button type="button" class="btn btn-success filter"  id="calves" >CALVES + HAMSTRINGS</button>
+          <button type="button" class="btn btn-success filter"  id="quads" >QUADS</button>
+          <button type="button" class="btn btn-success filter"  id="glutes" >GLUTES</button>
+          <button type="button" class="btn btn-success filter"  id="core" >CORE</button>
+          <button type="button" class="btn btn-success filter"  id="all" >ALL POSES</button>
+          </div>
+        <hr width="100%" size="4" color="lightgreen" noshade>
+        <div class="postsWrapper">
+     <!-- feet+ankle -->
+     <div class="row feet">
+       <h2 class="my-4" >FEET + ANKLES</h2>
+       <div class="col-lg-4 col-md-4 col-sm-12">
+         <div class="card" >
+           <img src="images/poses by anatomy/ankle1.png" class="card-img-top" alt="...">
+           <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="modal modal-lg fade" id="myModal">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">BOW POSE</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <h5>EXPERIMENTATION</h5>
+                  <p>Improves thoracic spine mobility.</p>
+                  <p>Stretches the knees, quads, chest and shoulders.</p> 
+                  <h5>CATEGORY</h5>
+                  <p>Backbend</p> 
+                  <h5>SKILL LEVEL</h5>
+                  <p>Advanced</p> 
+                  <h5>INSTRUCTIONS</h5>
+                  <h6>Set-Up</h6> 
+                  <p style="text-align: justify;">Lie face down on the mat with your arms by your sides and your forehead resting on the mat. </p>
+                  <h6>Actions</h6> 
+                  <p style="text-align: justify;">Bend your knees and reach back to take hold of the outsides your ankles. Flex your feet. Inhale, lift your chest and thighs up off the mat in Bow. Exhale, relax into the pose. </p>
+                  <h6>Refinements</h6> 
+                  <p style="text-align: justify;">Keep pressing your feet back into your hands, draw your shoulders back, lengthen your neck and try not to let your knees come out wider than your hips. </p>
+                  <h6>Duration</h6> 
+                  <p style="text-align: justify;">Hold the pose for 2-3 breaths. </p>
+                  <h6>To Release</h6> 
+                  <p style="text-align: justify;">Take a deep breath in. Exhale, carefully release the pose and rest one cheek on the mat. Rock your hips from side to side to release your lower back. Rest for a few breaths in  Child’s pose.</p>
+                  <h5>CONTRAINDICATIONS</h5>
+                  <p>Avoid Bow pose if you have a lower back, shoulder, hip, knee, ankle or foot injury.</p> 
+  
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          <div class="modal modal-lg fade" id="myModal5">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">BOW POSE</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe style="height: 600px;" class=" w-100 embed-responsive-item" src="videos/bow pose.mp4"></iframe>
+                  </div>
+  
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+           <div class="card-body">
+             <h5 class="card-title">YOGA SQUAT</h5>
+             <p style="text-align: justify;" class="card-text">Yoga Squat is a great hip opener that stretches the groin and glutes and builds strength and flexibility in the feet and ankles. Yoga Squat on your back we call Happy Baby pose and as an arm balance, the biomechanics are similar to Crow pose.</p>
+             <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-12">
+         <div class="card">
+           <img src="images/poses by anatomy/ankle2.png" class="card-img-top" alt="...">
+           <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+           <div class="card-body">
+             <h5 class="card-title">WIDE-LEGGED FORWARD BEND</h5>
+             <p style="text-align: justify;" class="card-text">Wide-Legged Forward Bend stretches the ankles, calves, hamstrings, groin and lower back and can help to alleviate lower back pain. You can play around with the width of your feet, try out different positions for your hands and turn it into a twist.</p>
+             <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+         </div>
+       </div>
+       <div  class="col-lg-4 col-md-4 col-sm-12">
+         <div class="card">
+           <img src="images/poses by anatomy/ankle3.png" class="card-img-top" alt="...">
+           <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+           <div class="card-body">
+             <h5 class="card-title">SIDE LUNGE</h5>
+             <p style="text-align: justify;" class="card-text">Side Lunge is a great pose for athletes to stretch the groin, calves and hamstrings, loosen up the hips and increase foot and ankle mobility. You can practice this pose dynamically before your workout or as a static hold after you exercise to keep your hips open and supple.</p>
+             <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+         </div>
+       </div>
+     </div>
+     <div class="row feet">
+       <div  class="col-lg-4 col-md-4 col-sm-12">
+         <div class="card" >
+           <img src="images/poses by anatomy/ankle4.png" class="card-img-top" alt="...">
+           <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+           <div class="card-body">
+             <h5 class="card-title">SCREAMING TOE POSE</h5>
+             <p style="text-align: justify;" class="card-text">Screaming Toe pose is the greatest stretch for tight toes, feet and ankles. It can be pretty excruciating, so please take it a few breaths at a time. Screaming Toe is particularly effective for runners but also for any athletes who wear shoes for their training.</p>
+             <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-12">
+         <div class="card">
+           <img src="images/poses by anatomy/ankle5.png" class="card-img-top" alt="...">
+           <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+           <div class="card-body">
+             <h5 class="card-title">RUNNERS LUNGE</h5>
+             <p style="text-align: justify;" class="card-text">Runners Lunge is a hip strength and stability pose. It strengthens the knees, quads, glutes and hips and stretches the ankles, calves, hamstrings, hip flexors and groin. It’s a great warm-up pose to practice before dropping into deeper into the psoas in Low Lunge and Lizard. </p>
+             <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-12">
+         <div class="card">
+           <img src="images/poses by anatomy/ankle6.png" class="card-img-top" alt="...">
+           <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+           <div class="card-body">
+             <h5 class="card-title">PLANK</h5>
+             <p style="text-align: justify;" class="card-text">Plank pose strengthens the abs, obliques, lower back and shoulders and is a key pose for alleviating lower back pain and for improving posture. It’s similar in form to Mountain pose, as your spine is in neutral and your alignment is symmetrical from right to left.</p>
+             <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+         </div>
+       </div>
+     </div>
+     <!-- CALVES + HAMSTRINGS -->
+     <div class="row calves">
+      <h2 class="my-4" >CALVES + HAMSTRINGS</h2>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" >
+          <img src="images/poses by anatomy/calves1.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">DOWNWARD DOG</h5>
+            <p style="text-align: justify;" class="card-text">Downward Dog is the quintessential yoga pose. It’s fantastic for stretching the backs of the legs and building strength in wrists, shoulders and glutes. It can also help to alleviate lower back pain, when practiced with proper form. Practicing Puppy pose can help you to feel the correct position for your spine and shoulders before lifting your hips up.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by anatomy/calves2.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">HALF MONKEY POSE</h5>
+            <p style="text-align: justify;" class="card-text">Half Monkey pose is an intermediate forward bend that stretches the ankles, calves, hamstrings and lower back. Another name for the pose is Half Front Splits. The reason they call it Half Monkey is, not because you look like a monkey but, because the Sanskrit name for the pose is ardha (half) hanumanasana after the famous Hindu monkey god, Hanuman.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div  class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by anatomy/calves3.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">RAGDOLL</h5>
+            <p style="text-align: justify;" class="card-text">Ragdoll releases tension at the lower back and stretches the calves and hamstrings. You can bend your knees as much as you need to. Download your FREE Hamstring Stretch Quick Guide here.Ragdoll releases tension at the lower back and stretches the calves and hamstrings. You can bend your knees as much as you need to. Download your FREE Hamstring Stretch Quick Guide here.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row calves">
+      <div  class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" >
+          <img src="images/poses by anatomy/calves4.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">RECLINING HAND-TO-BIG-TOE</h5>
+            <p style="text-align: justify;" class="card-text">In yoga, Reclining Hand-To-Big-Toe pose is our safest calf and hamstring stretch as it takes your lower back out of the equation.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by anatomy/calves5.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">REVOLVED HALF MOON</h5>
+            <p style="text-align: justify;" class="card-text">Revolved Balancing Half Moon is an advanced pose that stretches the calves and hamstrings, rotates the spine and challenges your balance. </p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by anatomy/calves6.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">REVOLVED SIDE ANGLE POSE</h5>
+            <p style="text-align: justify;" class="card-text">Revolved Side Angle pose is an advanced twisting hip opener that improves spinal mobility and stretches the calves and hamstrings. </p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- QUADS -->
+    <div class="row quads">
+      <h2 class="my-4" >QUADS</h2>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" >
+          <img src="images/poses by anatomy/quads1.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">CHAIR POSE</h5>
+            <p style="text-align: justify;" class="card-text">Chair pose strengthens the feet, ankles, knees, thighs, glutes, back and shoulders and can help to alleviate knee pain.Strengthens the feet, ankles, knees, thighs, hips, glutes, back and shoulders.Can help to alleviate knee pain.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/pose1.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">BOW POSE</h5>
+            <p style="text-align: justify;" class="card-text">Bow pose is an intense backbend that improves spinal mobility and opens up the chest. It's an advanced posture, so take extra care.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/pose2.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">BRIDGE POSE</h5>
+            <p style="text-align: justify;" class="card-text">Bridge pose improves spinal mobility, opens up the chest and hips, strengthens the posterior chain and relieves knee and back pain.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row quads">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" >
+          <img src="images/poses by type/bb6.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">DANCER POSE</h5>
+            <p style="text-align: justify;" class="card-text">Dancer pose is an advanced balancing pose that stretches the quads, hip flexors, abs, chest and shoulders and improves hip stability.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/bb7.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">FISH POSE</h5>
+            <p style="text-align: justify;" class="card-text">Fish pose opens up the chest, improves t-spine
+              mobility, strengthens the abs and relieves pain
+              in between the shoulder blades.</p>
+              <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by anatomy/ankle6.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">REVOLVED SIDE ANGLE POSE</h5>
+            <p style="text-align: justify;" class="card-text">Revolved Side Angle pose is an advanced twisting hip opener that improves spinal mobility and stretches the calves and hamstrings. </p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GLUTES -->
+    <div class="row glutes">
+      <h2 class="my-4" >GLUTES</h2>
+      <div  class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" >
+          <img src="images/poses by type/b8.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">REVOLVED TRIANGLE POSE</h5>
+            <p style="text-align: justify;" class="card-text">Revolved Triangle is an advanced twisting pose that improves spinal mobility and stretches the calves, hamstrings, t-spine and chest.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" >
+          <img src="images/poses by type/b7.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">REVOLVED SIDE ANGLE POSE</h5>
+            <p style="text-align: justify;" class="card-text">Revolved Side Angle pose is an advanced hip opener that improves spinal mobility and stretches the calves and hamstrings.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" >
+          <img src="images/poses by type/t5.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">REVOLVED HALF MOON POSE</h5>
+            <p style="text-align: justify;" class="card-text">Revolved Half Moon is an advanced pose that stretches the calves and hamstrings, rotates the spine and challenges your balance.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row glutes">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/fb7.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">KNEE-TO-CHEST POSE</h5>
+            <p style="text-align: justify;" class="card-text">Knees-To-Chest is essentially Child's pose on your back. It's great for releasing tension at the lower back and neutralising the spine.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/b4.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">EAGLE POSE</h5>
+            <p style="text-align: justify;" class="card-text">Eagle is an advanced pose that strengthens the hips and quads and stretches the glutes, IT band, TFL, upper back and shoulders.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/pose5.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">CHILD'S POSE</h5>
+            <p style="text-align: justify;" class="card-text">Child's pose is the ultimate restorative, pain- relieving yoga pose. You can take it any time, in your practice, you need to take a break.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CORE -->
+    <div class="row core">
+      <h2 class="my-4" >GLUTES</h2>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/bb7.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">FISH POSE</h5>
+            <p style="text-align: justify;" class="card-text">Fish pose opens up the chest, improves t-spine
+              mobility, strengthens the abs and relieves pain
+              in between the shoulder blades.</p>
+              <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/b2.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">CROW POSE</h5>
+            <p style="text-align: justify;" class="card-text">Crow pose is an advanced arm balance that strengthens the wrists, arms and shoulders and challenges your balance and body control.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/cs2.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">BOAT POSE</h5>
+            <p style="text-align: justify;" class="card-text">Boat pose is a tricky core stabiliser that strengthens the abs, obliques, lower back, hip flexors, adductors, upper back and neck.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row core">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by anatomy/ankle6.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">PLANK</h5>
+            <p style="text-align: justify;" class="card-text">Plank pose strengthens the abs, obliques, lower back and shoulders and is a key pose for alleviating lower back pain and for improving posture. It’s similar in form to Mountain pose, as your spine is in neutral and your alignment is symmetrical from right to left.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="images/poses by type/b9.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">SIDE PLANK</h5>
+            <p style="text-align: justify;" class="card-text">Side Plank strengthens the wrists, shoulders, back, glutes, abs and obliques and can help to alleviate lower back and shoulder pain.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" >
+          <img src="images/poses by type/b7.png" class="card-img-top" alt="...">
+          <a  href="#" type="button" class="btn btn-success filter1 position-absolute bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal5" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color:#1a3628" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg></a>
+          <div class="card-body">
+            <h5 class="card-title">REVOLVED SIDE ANGLE POSE</h5>
+            <p style="text-align: justify;" class="card-text">Revolved Side Angle pose is an advanced hip opener that improves spinal mobility and stretches the calves and hamstrings.</p>
+            <a  href="#" type="button"  class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+ </div>
+
+ <div class="footer">
+  <div class="container">
+      <footer>
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>QUICK LINKS</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">HOME</a></li>
+                <li class="nav-item mb-2"><a href="poses.html" class="nav-link p-0 text-body-secondary">POSES</a></li>
+                <li class="nav-item mb-2"><a href="meditation.html" class="nav-link p-0 text-body-secondary">MEDITATION</a></li>
+                <li class="nav-item mb-2"><a href="courses.html" class="nav-link p-0 text-body-secondary">COUSES</a></li>
+                <li class="nav-item mb-2"><a href="books.html" class="nav-link p-0 text-body-secondary">BOOKS</a></li>
+                <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">ABOUT</a></li>
+                <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Location</h5><br>
+              <p style="text-align: justify;">
+                  30-A,Progressive Center, Suite # 202-203, Main Shahrah-e-Faisal Rd, near Lal Kothi (house), Karachi, 75400, Pakistan
+              </p>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Contact with us</h5><br>
+              <p>
+                  Fell free to Contact us.
+              </p>
+              <p>
+                  <a href="#">+92-3123456789</a><br><br><a href="#"><span>iamkhansharjeel@gmial.com</span></a>
+              </p>
+            </div>
+                  
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>About Us</h5>
+                <p style="text-align: justify;">
+                  Welcome to our website, where your health and well-being are our top priorities. Our mission is to provide comprehensive, compassionate care that meets the diverse needs of our community. With a team of dedicated healthcare professionals, we are committed to delivering personalized medical services using the latest advancements in medical technology.
+              </p>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-center pt-4  border-top">
+            <p>© 2024 Copyright: <a href="index-clinic4.html">Medicare.com</a></p>
+          </div>
+        </footer>
+  </div>
+</div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

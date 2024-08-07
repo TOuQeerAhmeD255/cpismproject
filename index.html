@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel='stylesheet'
+    href='http://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400italic,500,600,700,700italic,800,900'>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class=" m-0" href="index.html"><img id="logo"  src="images/clininc4-logo@2x.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="ul" class="gap-4 text-center pt-2 fs-6 mx-lg-5 navbar-nav mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active mb-3" aria-current="page" href="index.html">Home</a>
+            </li> 
+            <div class="dropdown">
+              <button class="fs-6 btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Poses
+              </button>
+              <ul id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="poses_by_types.html" class="mainli"><button class="dropdown-item" type="button">Poses by Types</button></a></li>
+                <li><a href="poses_by_benefit.html" class="mainli"><button class="dropdown-item" type="button">Poses by Benefit</button></a></li>
+                <li><a href="poses-general.html" class="mainli"><button class="dropdown-item" type="button">Poses General</button></a></li>
+                <li><a href="poses_by_anatomy.html" class="mainli"><button class="dropdown-item" type="button">Poses by Anatomy</button></a></li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="meditation.html">Meditation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="courses.html">Courses</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="books.html">Books</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="naturaldiet.html">Natural Diet</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <div class="slider">
+        <img src="images/slider.1.jpg" class="w-100 img-fluid">
+    </div>
+    <div class="content">
+      <div class="py-5 programSection">
+          <div class="container">
+              <h3 id="text" class=" pb-4">See our natural healing program</h3>
+              <div class="row justify-content-center">
+                  <div class="col-md-4 mb-4">
+                      <div id="card"  class="card">
+                          <img  src="images/poses.png" class="position-relative card-img-top img-fluid" alt="...">
+                          <div id="card-body" class=" text-center w-100 position-absolute card-body">
+                            <div id="card-img" class="card1">
+                              <a id="btn1" href="poses_by_types.html" ><button id="btn" class="btn btn-success my-3" type="submit">READ MORE </button>
+                              </a>
+                            <h5 id="card-text" class="fw-bold fs-2 card-title text-light">POSES</h5>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div id="card" class="card" >
+                          <img  src="images/meditation.jpg" class="position-relative card-img-top img-fluid" alt="...">
+                          <div id="card-body" class=" text-center w-100 position-absolute card-body">
+                            <div id="card-img" class="card1">
+                              <a id="btn1" href="meditation.html" ><button id="btn" class="btn btn-success my-3" type="submit">READ MORE </button>
+                              </a>
+                            <h5 id="card-text" class="fw-bold fs-2 card-title text-light">MEDITATION</h5>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div id="card" class="card" >
+                          <img src="images/courses.jpg" class="position-relative card-img-top img-fluid" alt="...">
+                          <div id="card-body" class=" text-center w-100 position-absolute card-body">
+                            <div id="card-img" class="card1">
+                              <a id="btn1" href="courses.html" ><button id="btn" class="btn btn-success my-3" type="submit">READ MORE </button>
+                              </a>
+                            <h5 id="card-text" class="fw-bold fs-2 card-title text-light">COURSES</h5>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div id="card" class="card" >
+                          <img  src="images/books1.jpg" class="position-relative card-img-top img-fluid" alt="...">
+                          <div id="card-body" class=" text-center w-100 position-absolute card-body">
+                            <div id="card-img" class="card1">
+                              <a id="btn1" href="books.html" ><button id="btn" class="btn btn-success my-3" type="submit">READ MORE </button>
+                              </a>
+                            <h5 id="card-text" class="fw-bold fs-2 card-title text-light">BOOKS</h5>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                      <div id="card" class="card" >
+                          <img src="images/natural diet.jpg" class="position-relative card-img-top img-fluid" alt="...">
+                          <div id="card-body" class=" text-center w-100 position-absolute card-body">
+                            <div id="card-img" class="card1">
+                              <a id="btn1" href="naturaldiet.html" ><button id="btn" class="btn btn-success my-3" type="submit">READ MORE </button>
+                              </a>
+                            <h5 id="card-text" class="fw-bold fs-2 card-title text-light">NATURAL DIET</h5>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="section">
+          <div class="row align-items-center g-0 sectionBackground">
+              <div class="col-md-6">
+                  <img src="images/clinic4-home-building.jpg"
+                      class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <div class="px-5">
+                      <h2 class="text-white">We take care of mental & physical health</h2>
+                      <p style="text-align: justify;" class="text-white">At our website, we are committed to providing comprehensive, compassionate care to our community. Our mission is to support your health and well-being with a full spectrum of services, from preventive care to advanced treatments. We believe that every patient deserves personalized attention and care, tailored to their unique needs. Your health is our top priority, and we strive to make every visit a positive experience.</p>
+                      <div class="row mt-5">
+                          <div class="col-md-6 d-flex align-items-center mb-5">
+                              <img src="images/clinic4-home-icon-1.png"
+                                  class="img-fluid me-3">
+                              <div>
+                                  <h3 class="fw-bold mb-0 fs-4 text-white">Innovative Treatment</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-6 d-flex align-items-center mb-5">
+                              <img src="images/clinic4-home-icon-1.png"
+                                  class="img-fluid me-3">
+                              <div>
+                                  <h3 class="fw-bold mb-0 fs-4 text-white">Vitality</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-6 d-flex align-items-center mb-5">
+                              <img src="images/clinic4-home-icon-1.png"
+                                  class="img-fluid me-3">
+                              <div>
+                                  <h3 class="fw-bold mb-0 fs-4 text-white">Healing</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-6 d-flex align-items-center mb-5">
+                              <img src="images/clinic4-home-icon-1.png"
+                                  class="img-fluid me-3">
+                              <div>
+                                  <h3 class="fw-bold mb-0 fs-4 text-white">Recovery</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+
+  </div>
+  <div class="footer">
+    <div class="container">
+        <footer>
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>QUICK LINKS</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">HOME</a></li>
+                  <li class="nav-item mb-2"><a href="poses.html" class="nav-link p-0 text-body-secondary">POSES</a></li>
+                  <li class="nav-item mb-2"><a href="meditation.html" class="nav-link p-0 text-body-secondary">MEDITATION</a></li>
+                  <li class="nav-item mb-2"><a href="courses.html" class="nav-link p-0 text-body-secondary">COUSES</a></li>
+                  <li class="nav-item mb-2"><a href="books.html" class="nav-link p-0 text-body-secondary">BOOKS</a></li>
+                  <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">ABOUT</a></li>
+                  <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">CONTACT</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Location</h5><br>
+                <p style="text-align: justify;">
+                    30-A,Progressive Center, Suite # 202-203, Main Shahrah-e-Faisal Rd, near Lal Kothi (house), Karachi, 75400, Pakistan
+                </p>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Contact with us</h5><br>
+                <p>
+                    Fell free to Contact us.
+                </p>
+                <p>
+                    <a href="#">+92-3123456789</a><br><br><a href="#"><span>iamkhansharjeel@gmial.com</span></a>
+                </p>
+              </div>
+                    
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>About Us</h5>
+                  <p style="text-align: justify;">
+                    Welcome to our website, where your health and well-being are our top priorities. Our mission is to provide comprehensive, compassionate care that meets the diverse needs of our community. With a team of dedicated healthcare professionals, we are committed to delivering personalized medical services using the latest advancements in medical technology.
+                </p>
+                </form>
+              </div>
+            </div>
+        
+            <div class="d-flex flex-column flex-sm-row justify-content-center pt-4  border-top">
+              <p>© 2024 Copyright: <a href="index-clinic4.html">Medicare.com</a></p>
+            </div>
+          </footer>
+    </div>
+</div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+*{font-family: "Poppins", Helvetica, Arial, sans-serif;}
+h1, h1 a, h1 a:hover, .text-logo #logo {color: #356938;}
+h2, h2 a, h2 a:hover {color: #356938;}
+h3, h3 a, h3 a:hover {color: #356938;}
+h4, h4 a, h4 a:hover, .style-simple .sliding_box .desc_wrapper h4 {color: #356938;}
+h5, h5 a, h5 a:hover {color: #356938;}
+h6, h6 a, h6 a:hover, a.content_link .title {color: #356938;}
+a {color:#89c461}
+.headerMenu li a {color: #346938;}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link  {color: #7bb157 !important;background-color: transparent;}
+.card-img-overlay {bottom: 0;top: auto;}
+.programSection {background-image: url(../images/clinic4-home-plants-bg.png);background-repeat: no-repeat;background-position: right bottom;}
+.sectionBackground{background-image: url(../images/home-floral-bg.jpg);}
+.card , .card img  {border-radius: 0;}
+.profileCard .card-body {background-color: #2d493a;color: #fff;}
+.profileCard .card-text {color:#89c461}
+.team {background: linear-gradient(112deg, #ffffff 50%, #89c461 50%);}
+.slick-dots li button:before {font-size: 15px;}.footer {background-image: url(../images/clinic4-footer-bg-less.png);background-position: center;background-repeat: no-repeat;background-size: cover;background-color: #eff4f0;}
+footer {padding-top: 120px;}
+#navbar{background-color: #1a3628;}
+#logo{width: 155.82px;height: 59.98px;}
+.slider , .otherSlider{margin-top: 70px;}
+#text{color: #1a3628;font-weight: 600;font-size: 35px;}
+#card-body{margin-top: 320px;line-height: 80px;}
+#btn{background-color: #89c461;border: none;font-weight: 500;}
+h2{color: #2d493a;}
+#card:hover {transform: scale(1.075);box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;}
+#card {transition: transform 0.7s;}
+#btn1 :hover{background-color: #346938;}
+.checked {color: orange;}
+#dropdownMenu2{background-color: transparent;border: none;margin-top: 2px;}
+.mainli{color: #1a3628;text-decoration: none;}
+.card{margin-bottom: 30px;}
+h1{font-size: 60px;margin-left: 30px;margin-bottom: 40px;color: #1a3628;text-align: center;}
+.nd_bg{background-image: url(../images/clinic4-home-floral-bg.jpg);}
+.nd_bg *{color: #fff;}
+.filter1 ,.filter{background-color: #89c461;border: none;}
+.checked {color: orange;}
+p{text-align: justify;}
+.programSection .card img {max-height:500px}
+.dropdown-item:focus, .dropdown-item:hover {background-color: #89c461;color: #fff;}
+.modal-header , .modal-footer {background-color: #89c461;color: #fff;}
+.otherSlider > div{height: 400px; background-color: #244435;}
+.otherSlider .image {    height: 400px;    background-position: center;    background-repeat: no-repeat;    background-size: cover;}
+.p_issue{  margin-top: 80px;}
+.p_issue1{  margin-top: 130px;}

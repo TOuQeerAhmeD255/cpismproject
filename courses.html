@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel='stylesheet'
+    href='http://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400italic,500,600,700,700italic,800,900'>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class=" m-0" href="index.html"><img id="logo"  src="images/clininc4-logo@2x.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="ul" class="gap-4 text-center pt-2 fs-6 mx-lg-5 navbar-nav mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active mb-3" aria-current="page" href="index.html">Home</a>
+            </li> 
+            <div class="dropdown">
+              <button class="fs-6 btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Poses
+              </button>
+              <ul id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="poses_by_types.html" class="mainli"><button class="dropdown-item" type="button">Poses by Types</button></a></li>
+                <li><a href="poses_by_benefit.html" class="mainli"><button class="dropdown-item" type="button">Poses by Benefit</button></a></li>
+                <li><a href="poses-general.html" class="mainli"><button class="dropdown-item" type="button">Poses General</button></a></li>
+                <li><a href="poses_by_anatomy.html" class="mainli"><button class="dropdown-item" type="button">Poses by Anatomy</button></a></li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="meditation.html">Meditation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="courses.html">Courses</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="books.html">Books</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="naturaldiet.html">Natural Diet</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="otherSlider">
+    <div class="row g-0 justify-content-center align-items-center">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-white">Courses</h1>
+      </div>
+      <div class="col-sm-6 image" style="background-image: url(images/courses_bannerr.jpg);">
+      </div>
+    </div>
+  </div>
+    <div class="content">
+       <div class="container">
+        <div class="row p_issue mt-lg-1 mt-md-1">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <p class="text-center mt-3">Choose from over 50 courses designed for athletes in all sports, at every level of ability.Following a course is one of the easiest and best ways to be consistent, track your progress and stay accountable.Get in touch if you'd like some help choosing which course is the best for for you.</p>
+          </div>
+        </div>
+        
+        <hr width="100%" size="4" color="lightgreen" noshade>
+        <div class="d-flex justify-content-center gap-5 flex-wrap my-4">
+          <button type="button" class="btn btn-success filter"  id="specific" >SPECIFIC TO YOUR SPORTS</button>
+          <button type="button" class="btn btn-success filter"  id="course" >INTRO COURSE</button>
+          <button type="button" class="btn btn-success filter"  id="back" >GET BACK ON YOUR FEET</button>
+          <button type="button" class="btn btn-success filter"  id="pro" >TURNING PRO</button>
+          <button type="button" class="btn btn-success filter"  id="focused" >BE FOCUSED</button>
+          <button type="button" class="btn btn-success filter"  id="all" >ALL COURSES</button>
+          </div>
+        <hr width="100%" size="4" color="lightgreen" noshade>
+        <div class="postsWrapper">
+        <!-- specific sports -->
+        <div class="row specific">
+          <h2 class="mb-4 text-center">SPECIFIC TO YOUR SPORTS</h2>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/sports1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">RUNNER 15 (PART TWO)</h3> <br>
+                <p style="text-align: justify;" class="card-text">Want to run faster, longer and with less effort? Then we need to dial in your yoga practice! If you’re anything like me, it is my everyday body maintenance that is keeping me in the game—uninjured and pain-free.
+                </p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+                <div class="modal modal-lg fade" id="myModal">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">RUNNER 15 (PART TWO)</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <p style="text-align: justify;">In part two of Runner 15, we practice all brand new Yoga 15 videos in 4 different styles, to give you everything you need to run pain and injury-free today and for many years to come. </p>
+                        <li>Yoga For Strength—especially for the core, hips and knees.</li>
+                        <li>Yoga For Flexibility—primarily for the calves, hamstrings, quads, hips, groin and glutes.</li> 
+                        <li>Yoga For Mobility—for your ankles, hips, thoracic, shoulders and neck.</li> 
+                        <li> Yoga For Recovery—to alleviate lower back, mid back, knee and hip pain.</li> <br>
+                        <h2>EXPERIMENTATION</h2>
+                        <p style="text-align: justify;">For each of you, your yoga practice is going to look different. I prefer an everyday, 15-minute practice of a variety of different types of sequences but you may choose just to do 3 sessions a week or to double up every day. The timing is also going to be unique to your personal scheduling and commitments. I like to warm up for runs with Mobility-style sequences, cool down with Flexibility and Recovery sessions and train Core Strength on days when I am not running. But I encourage you to experiment with what works for you. You can always drop me a message if you have any questions. </p>
+                      </div>
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/sports2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">UPPER BODY CYCLING</h3> <br>
+                <p style="text-align: justify;" class="card-text">This course is designed for cyclists to improve neck and shoulder flexibility so that you can maintain optimal positioning on the bike, enhance your comfort, reduce your risk of injury, and improve your overall performance.</p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal1" >Read More</a>
+                <div class="modal modal-lg fade" id="myModal1">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">UPPER BODY CYCLING</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <h5>WHY THIS COURSE?</h5>
+                        <p style="text-align: justify;">Here is a breakdown of why upper body flexibility is so crucial for cyclists. </p>
+                        <h6>1. Aerodynamic Positioning</h6>
+                        <li>Aerodynamic Position: This position involves having the torso low and the arms extended forward, which places significant strain on the neck and shoulders.</li>
+                        <li>Head Position: Maintaining a low, forward head position helps reduce drag, but this requires a flexible neck to keep the head up and eyes forward without excessive strain.</li> <br>
+                        <h6>2. Comfort and Endurance</h6>
+                        <li>Prolonged Effort: Sustaining the aerodynamic position for such durations demands good flexibility to avoid discomfort and pain.</li> 
+                        <li>Muscle Fatigue: Inflexible neck and shoulders can lead to muscle fatigue, causing discomfort that distracts from performance and can affect endurance and power output.</li> <br>
+                        <h6>3. Injury Prevention</h6>
+                        <li>Strain and Tension: Tight or inflexible muscles are more prone to strain. Cyclists with poor flexibility in the neck and shoulders are at a higher risk of overuse injuries.</li> 
+                        <li>Balance and Stability: Good flexibility contributes to better stability and control, which can prevent accidents and injuries, especially when adjusting positions or navigating turns.</li>
+                        <h6>4. Power Transfer</h6>
+                        <li>Upper Body Relaxation: Flexible neck and shoulders allow the upper body to remain relaxed, minimizing unnecessary movements and maximizing power transfer to the pedals.</li> 
+                        <li>Efficient Breathing: Flexibility aids in maintaining an open chest and proper breathing mechanics, which is essential for oxygen delivery during high-intensity efforts.</li>
+                      </div>
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row specific">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/sports3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">YOGA FOR WEIGHTLIFTERS</h3> <br>
+                <p style="text-align: justify;" class="card-text">Yoga For Weightlifters is a course designed for all of you who lift weights and know how your muscles feel the day after a hard session!The sequences are designed to activate key muscle groups before your weight training sessions and stretch you out after, depending on which muscles you are focusing on. 
+                </p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal2" >Read More</a>
+                <div class="modal modal-lg fade" id="myModal2">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">YOGA FOR WEIGHTLIFTERS</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <h5>BENEFITS OF YOGA FOR WEIGHTLIFTERS</h5>
+                        <p style="text-align: justify;">“To all you muscle-bound guys pumping iron—get down on the mat and start stretching.” Dr. Nicholas DiNubile. <br>
+                        Weight-lifting, like all sports, can establish muscular imbalances in the body that lead to restrictions in mobility and even injury over time. This is only exacerbated if you focus on isolated exercises, such as bicep curls, calf raises and triceps kickbacks that develop muscles unevenly. <br>
+                        Regular practice of the Yoga For Weightlifters program can help to prevent injuries and imbalances in the following ways:</p>
+                        <li>Release tension in tight muscles</li>
+                        <li>Strengthen smaller stabiliser muscles that can be neglected in weightlifting</li>
+                        <li>Increase mobility in stiff joints</li>
+                        <li>Improve body (muscle activation) awareness</li>
+                        <li>Accelerate recovery</li>
+                        <li>Reduce your risk of injury</li>
+                        <li>Relieve stress</li>
+                        <li>Improve your focus and concentration</li>
+                        <p style="text-align: justify;">These improvements, especially to your mobility and flexibility, will not only reduce your risk of pain and injury but also accelerate your performance and increase your gains.</p>
+                      </div>
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/sports4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">YOGA FOR HIKING </h3> <br>
+                <p style="text-align: justify;" class="card-text">Hiking is fun, challenging and full of adventure but it can be tough on your body if you don’t prepare properly and take the time to replenish after. And that’s where yoga comes in!It’s also a great idea to start practicing these videos in preparation for multi-day hikes to condition your body so that you don’t suffer from pain, stiffness AND avoidable injury during your trip.</p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal3" >Read More</a>
+                <div class="modal modal-lg fade" id="myModal3">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">YOGA FOR HIKING</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <h5>COMMON ISSUES FOR HIKERS</h5>
+                        <p style="text-align: justify;">Hikers require excellent strength, balance and stamina and yoga can help to train all three.</p>
+                        <li>Strength—The muscles you need to prepare for a hike are also those you need to take the time to stretch out after. Primarily, the:</li>
+                        <li>Quads, glutes, hamstrings and calves.</li>
+                        <li>Neck, core, upper and lower back.</li>
+                        <li>Balance—Similarly with balance, hikers need good stability in the ankles, knees, hips and core and these are the areas we also need to pay attention to after your hike. </li>
+                        <li>Stamina—In yoga, hikers can learn to improve stamina by practicing effective nasal breathing and building muscular endurance in the muscles. We do this by holding poses for several breaths and repeating this week after week.</li>
+                        <h5>COURSE STRUCTURE</h5>
+                        <p style="text-align: justify;">In this course, I have divided the videos into three sections:</p>
+                        <li>Prepare—These videos are designed to engage and activate key muscles groups, either immediately pre-hike or in preparation for a hiking trip.</li>
+                        <li>Restore—You can practice these sequences directly after you come back from your hike to release tension in the muscles that you have been working hard.</li>
+                        <li>Rejuvenate—These routines are designed to relax your body and mind in the evening so that you get the best sleep possible and always feel rejuvenated.</li>
+
+                      </div>
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row specific">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/sports5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">YOGA FOR ROWERS</h3> <br>
+                <p style="text-align: justify;" class="card-text">In this Yoga For Rowers course, we cover everything you need as athletes to stay pain and injury-free.Whether you’re rowing indoors to improve your fitness or you’re lucky enough to get out on the water to train, the postural demands of the sport can easily derail you with overuse injuries. That’s if you don’t have a well-designed recovery plan in place.
+                </p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/sports6.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">YOGA FOR BOXERS</h3> <br>
+                <p style="text-align: justify;" class="card-text">This Yoga For Boxers course is designed for amateur and professional boxers. Practicing this series of videos will keep you supple, fast and pain-free for both training and competition.Boxing is a tremendously demanding sport. It’s highly explosive and requires good strength, endurance, power and speed as well as lightning-fast reactions..</p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row specific">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/sports7.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">YOGA FOR TENNIS</h3> <br>
+                <p style="text-align: justify;" class="card-text">Yoga For Tennis is designed for both amateur and professional tennis players to improve your performance and reduce your risk of injury.“Yoga helped me not just with the breathing. It helped me with my mental strength and with my performance in general. I try to do it daily, at least one time.” Novak Djokovic
+                </p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/sports8.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">GOLFER 15</h3> <br>
+                <p style="text-align: justify;" class="card-text">This is yoga for a killer golf swing! I have selected 15 videos from the Yoga 15 library that are going to give you the biggest bang for your buck when it comes to addressing the issues brought on by playing golf. It is the ultimate self-maintenance tool that can keep you strong, supple and most crucial of all, in balance.</p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- intro course -->
+        <div class="row course">
+          <h2 class="mb-4 text-center">INTRO COURSES</h2>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/intro1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">7-DAY INTRO TO YOGA</h3> <br>
+                <p style="text-align: justify;" class="card-text">Welcome to your 7-Day Intro To Yoga For Athletic Performance And Recovery. The videos in this course are suitable for beginners and cover all 5 of the Yoga 15 skills.In this course, we practise a different video each day for 7 days, ideally back-to-back. The sequences are suitable for beginners and cover all your bases, so that you can start to take advantage of all the benefits that Yoga For Athletic Performance And Recovery has to offer you, today!
+                </p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/intro2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">14-DAY INTRO TO YOGA </h3> <br>
+                <p style="text-align: justify;" class="card-text">Welcome to your 14-Day Intro To Yoga For Athletic Performance And Recovery. The videos in this course are suitable for beginner-intermediate level and cover all 5 of the Yoga 15 skills.In this course, we practise a different video each day for 14 days, ideally back-to-back. The sequences are suitable for beginner-intermediate level and cover all your bases, so that you can start to take advantage of all the benefits that Yoga For Athletic Performance And Recovery has to offer you, today!</p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row course">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/intro3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">21-DAY INTRO TO YOGA</h3> <br>
+                <p style="text-align: justify;" class="card-text">Welcome to your 21-Day Intro To Yoga For Athletic Performance And Recovery. The videos in this course are suitable for beginner-intermediate level and cover all 5 of the Yoga 15 skills.In this course, we practise a different video each day for 21 days, ideally back-to-back. The sequences are suitable for beginner-intermediate level and cover all your bases, so that you can start to take advantage of all the benefits that Yoga For Athletic Performance And Recovery has to offer you, today!
+                </p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/intro4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">28-DAY INTRO TO YOGA </h3> <br>
+                <p style="text-align: justify;" class="card-text">Welcome to your 28-Day Intro To Yoga For Athletic Performance And Recovery. The videos in this course are suitable for beginner-advanced level and cover all 5 of the Yoga 15 skills.In this course, we practise a different video each day for 4 weeks, ideally back-to-back. The sequences are suitable for beginner-advanced level and cover all your bases, so that you can start to take advantage of all the benefits that Yoga For Athletic Performance And Recovery has to offer you, today!</p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- get back on your feet -->
+        <div class="row back">
+          <h2 class="mb-4 text-center">GET BACK ON YOUR FEET</h2>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/FEET1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">LOOK MA, NO HANDS!</h3> <br>
+                <p style="text-align: justify;" class="card-text">In this course, we cycle through non-weightbearing, restorative yoga videos and take some lighter days for breathing and meditation.The goal is to keep you moving during your recovery, to the extent that is safe for you, so that you lose as little ground as possible and maybe even make some improvements, during a time that can otherwise be horribly frustrating.
+                </p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/feet2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">14-DAY COVID RECOVERY </h3> <br>
+                <p style="text-align: justify;" class="card-text">This 14-day recovery program is designed for those of you who are not yet able to train at full capacity post-COVID 19 infection. Practice one 15-minute video every day for two weeks after your symptoms have subsided, repeating the cycle as many times as you need to.These sequences are very gentle and restorative but please listen to your body. </p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row back">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/feet3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">MID-BACK PAIN RELIEF </h3> <br>
+                <p style="text-align: justify;" class="card-text">When the pain strikes, your instinct may be to stretch your upper back but this could actually be making things worse. What you need to do is the reverse of your most common daily activities: open up your chest, activate the muscles that support your shoulder blades and increase mobility in the thoracic spine.This 15-video course is designed to eliminate and prevent future incidences of soreness in between the shoulder blades.
+                </p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card mb-4">
+              <img src="images/couses/feet4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">PAIN-FREE LOWER BACK</h3> <br>
+                <p style="text-align: justify;" class="card-text">As the causes, presentation and severity of back pain can vary significantly from person to person, you may find that you some sequences are more beneficial for you than others. You can also experiment with how often you want to practice and at what time of day.This six-week program builds a strong, resilient core, improves flexibility in the lower back, hips and hamstrings and reduces overall stress.</p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- turning pro -->
+       <div class="row pro">
+        <h2 class="mb-4 text-center">TURNING PRO</h2>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/pro1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">ULTIMATE YIN YOGA</h3> <br>
+              <p style="text-align: justify;" class="card-text">In yin yoga, instead of flowing from one pose to the next, we focus on just a few postures, holding each of them for a minimum of 10 breaths. In this style, time, not intensity, is the active ingredient. We work alongside gravity to release deeply-held tension, exerting as little muscular effort as possible and prioritising stillness and receptivity over movement and strength.All styles of yoga improve your overall sense of wellbeing. 
+              </p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/pro2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">ULTIMATE STRENGTH TRAINER</h3> <br>
+              <p style="text-align: justify;" class="card-text">This comprehensive strength program incorporates isometric, dynamic, core and balance training to build strength, improve resilience and boost your athletic performance. It’s the perfect course to complement your sports-specific training.We focus on 5 different techniques that you can practice over 6 weeks…and then repeat!Lower Body Strength,
+                Core Strength,
+                Upper Body Strength,
+                Dynamic Strength,
+                Balance</p>
+                <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pro">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/pro3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">ATHLETE TOOLKIT</h3> <br>
+              <p style="text-align: justify;" class="card-text">This course is a little different than the others as it is more like a toolkit that you can go to when you need it. Having said that, it can also work well as a self-contained program as it incorporates a cross-section of disciplines.In this section, you will find a warm-up, mobility workout, abs routine, balance sequence and upper body strengthener.
+              </p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/pro4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">BALANCE MASTERY </h3> <br>
+              <p style="text-align: justify;" class="card-text">What also makes yoga is special is that we don’t practice balance poses in isolation but sequence them together in dynamic flows. So with consistent practice, we teach ourselves functional balance that incorporates body control, accuracy of movement, coordination, agility and enhances our powers of concentration. </p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pro">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/pro5.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">TOTAL YOGA CHALLENGE</h3> <br>
+              <p style="text-align: justify;" class="card-text">Improve your flexibility, balance, mobility, strength and recovery in this 15-video challenge!In this program, we cycle through all 5 Yoga 15 skills, in sequences that increase in difficulty as we make our way through the challenge.These beginner videos are designed to improve your flexibility through static stretching. In this series, we focus on increasing flexibility in the spine, hips and hamstrings.
+              </p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/pro6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">BOOTCAMP YOGA</h3> <br>
+              <p style="text-align: justify;" class="card-text">This course isn’t quite military camp but it is designed to quickly and efficiently improve your core upper and lower body strength. You will also have some easier days where we focus on flexibility, mobility and recovery.In this course, you will practice 6 sessions a week for 4 weeks. If you love it and how your body feels at the end of a month, I recommend you go back to the beginning and start over!</p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pro">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/pro7.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">BEST OF!</h3> <br>
+              <p style="text-align: justify;" class="card-text">This is the first Yoga 15 “Best of…” album!In this course, I have put together the most popular videos on the website into a 6-week program. I’ve scheduled 6 sessions a week including a 30-minute sequence at the weekend. This is the cycle (although you can choose to practice the videos in any order):Monday—Recovery
+                Tuesday—Strength
+                Wednesday—Flexibility
+                Thursday—Recovery
+                Friday—Mobility
+                Saturday/Sunday—30-Minute
+              </p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/pro8.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">STRENGTH AND CONDITIONING</h3> <br>
+              <p style="text-align: justify;" class="card-text">This 28-day course is designed as a Strength and Conditioning program that trains strength, mobility, flexibility and balance. It is for the most hardcore amongst you!I travel a fair amount. In the last 4 months, I have spent time in Mexico, London, France, Brussels, Lisbon and Greece. Unfortunately, this means that I haven’t been able to stick to my Altamirano Systems training program every day as I normally would.</p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- be focused -->
+      <div class="row focused">
+        <h2 class="mb-4 text-center">BE FOCUSED</h2>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/focus1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">HAMSTRING FLEXIBILITY</h3> <br>
+              <p style="text-align: justify;" class="card-text">This 30-day course is designed to improve your functional hamstring flexibility so that you can get into any position that your sport demands and achieve your best times yet. By the end of the month, you’ll be more supple, better able to generate power at your end ranges of motion and free from related aches and pains. You should also feel far more graceful in your yoga practice!
+              </p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/focus2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">SHOULDER MOBILITY </h3> <br>
+              <p style="text-align: justify;" class="card-text">It seems that everyone in my life has less than stellar shoulder range of motion. My boxing coach, ex-rugby-playing best friend, Greg Minnaar—world champion mountain biker after crashing in Snowshoe last month, my gardening mother and even me in the past as an over-zealous, younger yogi.The shoulder is one of our most versatile joints. It can flex, extend, abduct, adduct, and rotate internally and externally.</p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row focused">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/focus3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">STRONG, FLEXIBLE HIPS</h3> <br>
+              <p style="text-align: justify;" class="card-text">When you get into a rhythm of practicing the videos in this course consistently, you will find that you can get into all the body positions that you need to for your sport, fast, with precision and pain-free.In this course, we cycle through Recovery, Flexibility, Mobility, Strength and Balance videos that range in difficulty from easy through to advanced. And I have set the course to “linear” so that you can jump around and choose the session that is most appropriate for you each day.
+              </p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card mb-4">
+            <img src="images/couses/focus4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">RELEASE TIGHT GLUTES</h3> <br>
+              <p style="text-align: justify;" class="card-text">This course is designed to release tension in tight glutes so that you stay supple and pain-free whatever your training and everyday movement habits.I have chosen 12 videos that focus on releasing tension in tight hips, specifically the glutes. My recommendation is that you practice 3 per week for 4 weeks. If you’re a one-a-day or more kind of athlete, you could take this course alongside another that you are working through but equally you can follow this program on its own.</p>
+              <a  href="#" type="button" class="btn btn-success filter1" data-bs-toggle="modal" data-bs-target="#myModal" >Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       </div>
+       
+
+    </div>
+    <div class="footer">
+      <div class="container">
+          <footer>
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>QUICK LINKS</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">HOME</a></li>
+                    <li class="nav-item mb-2"><a href="poses.html" class="nav-link p-0 text-body-secondary">POSES</a></li>
+                    <li class="nav-item mb-2"><a href="meditation.html" class="nav-link p-0 text-body-secondary">MEDITATION</a></li>
+                    <li class="nav-item mb-2"><a href="courses.html" class="nav-link p-0 text-body-secondary">COUSES</a></li>
+                    <li class="nav-item mb-2"><a href="books.html" class="nav-link p-0 text-body-secondary">BOOKS</a></li>
+                    <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">ABOUT</a></li>
+                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">CONTACT</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Location</h5><br>
+                  <p style="text-align: justify;">
+                      30-A,Progressive Center, Suite # 202-203, Main Shahrah-e-Faisal Rd, near Lal Kothi (house), Karachi, 75400, Pakistan
+                  </p>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Contact with us</h5><br>
+                  <p>
+                      Fell free to Contact us.
+                  </p>
+                  <p>
+                      <a href="#">+92-3123456789</a><br><br><a href="#"><span>iamkhansharjeel@gmial.com</span></a>
+                  </p>
+                </div>
+                      
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h5>About Us</h5>
+                    <p style="text-align: justify;">
+                      Welcome to our website, where your health and well-being are our top priorities. Our mission is to provide comprehensive, compassionate care that meets the diverse needs of our community. With a team of dedicated healthcare professionals, we are committed to delivering personalized medical services using the latest advancements in medical technology.
+                  </p>
+                  </form>
+                </div>
+              </div>
+          
+              <div class="d-flex flex-column flex-sm-row justify-content-center pt-4  border-top">
+                <p>© 2024 Copyright: <a href="index-clinic4.html">Medicare.com</a></p>
+              </div>
+            </footer>
+      </div>
+  </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
